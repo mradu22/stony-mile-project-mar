@@ -1,0 +1,32 @@
+<!doctype html>
+<title>The Data Incubator Milestone Project - Jan 2018</title>
+
+<link
+    href="http://cdn.pydata.org/bokeh/release/bokeh-0.12.7.min.css"
+    rel="stylesheet" type="text/css"
+>
+
+<div class=page>
+  <h1>A basic Stock lookup and plotting Heroku app</h1>
+  <div class=metanav>
+    <h2>Enter a STOCK name: (e.g. NVDA).</h2>
+      <h4>
+      <form id='answerform' method='post' action='plotpage' >
+
+      <p>Ticker : <input type='text' name='tickerText' placeholder="NVDA" /></p>
+
+      <p>
+      <input type="checkbox" name='priceCheck' value='Close' />Closing price<br>
+      <input type="checkbox" name='priceCheck' value='High' /> Highest price<br>
+      <input type="checkbox" name='priceCheck' value='Open' />Opening price<br>
+      <input type="checkbox" name='priceCheck' value='Low' /> Lowest price<br>
+      </p>
+
+
+      <p><input type='submit' value='Submit' /></p>
+
+      </form>
+      </h4>
+	  <h2> {{ msg }} </h2>
+  </div>
+</div>

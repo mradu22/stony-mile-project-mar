@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+
+
+<!-- <link
+    href="http://cdn.pydata.org/bokeh/release/bokeh-0.12.7.min.css"
+    rel="stylesheet" type="text/css"
+>
+<script
+    src="http://cdn.pydata.org/bokeh/release/bokeh-0.12.7.min.js"
+></script> -->
+
+
+<link
+    href="http://cdn.pydata.org/bokeh/release/bokeh-0.12.7.min.css"
+    rel="stylesheet" type="text/css">
+<link
+    href="http://cdn.pydata.org/bokeh/release/bokeh-widgets-0.12.7.min.css"
+    rel="stylesheet" type="text/css">
+
+<script src="http://cdn.pydata.org/bokeh/release/bokeh-0.12.7.min.js"></script>
+<script src="http://cdn.pydata.org/bokeh/release/bokeh-widgets-0.12.7.min.js"></script>
+
+
+
+<head/>
+
+<body>
+      <form id='homebutton' method='post' action='index' >
+        <p>
+          <input type='submit' value='Back' />
+        </p>
+      </form>
+
+
+    <h1>{{ ticker | safe }} Stock Price </h1>
+
+    {{ script|safe }}
+    {{ div|safe }}
+
+
+</body>
+
+</html>
